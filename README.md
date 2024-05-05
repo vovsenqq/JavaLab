@@ -6,5 +6,9 @@ java -cp bin Main
 ## Теперь используем Maven поэтому:
 mvn exec:java
 
-## Сбилженный файл с зависимостями запускить:
+## Сбилженный файл с зависимостями запускать:
 \JavaLab\target> java -jar .\javalabapplication-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+## Штрафные задания:
+javac penalty3.java
+java penalty3
