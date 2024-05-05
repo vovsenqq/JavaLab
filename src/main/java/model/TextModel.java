@@ -4,7 +4,7 @@ public class TextModel {
     private String text;
 
     public TextModel() {
-        this.text = "Ого оно запустилось!";
+        this.text = "hello world";
     }
 
     public String getText() {

@@ -1,12 +1,21 @@
-import model.TextModel;
+import model.ApiClient;
+import model.SelectedObjectModel;
+import model.SelectedRegionModel;
+import model.TypesForRequest;
 import view.MainFrame;
 import controller.MainController;
 
-public class Main {
-    public static void main(String[] args) {
-        TextModel model = new TextModel();
-        MainFrame view = new MainFrame("Vladimir Senyukov senior java dev");
+import java.io.IOException;
 
-        MainController controller = new MainController(view, model);
+public class Main {
+    public static void main(String[] args) throws IOException {
+        ApiClient apiClient = new ApiClient();
+        TypesForRequest model = new TypesForRequest();
+        SelectedRegionModel selectedRegionModel = new SelectedRegionModel();
+        SelectedObjectModel selectedObjectModel = new SelectedObjectModel();
+        MainFrame view = new MainFrame("super mega app", apiClient, model);
+
+        // MainController mainController = new MainController(view, apiClient, selectedRegionModel, selectedObjectModel);
+
     }
 }
