@@ -1,6 +1,6 @@
+controller\MainController.class
 Main.class
 model\TextModel.class
+view\MainFrame.class
 model\ApiClient.class
 controller\SearchButtonListener.class
-view\MainFrame.class
-controller\MainController.class
